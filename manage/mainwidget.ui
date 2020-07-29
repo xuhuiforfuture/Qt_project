@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>582</width>
+    <height>474</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWidget</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,12">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(230, 255, 203);
+border-color: rgb(255, 0, 255);
+color: rgb(0, 0, 0);
+font: 9pt &quot;楷体&quot;;</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QPushButton" name="patientButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>病人列表</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="deviceButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>设备列表</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bindButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>病人与设备绑定</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="realtimeButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>实时波形</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="historyButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>历史波形</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="docLoginButton">
+        <property name="text">
+         <string>医生登陆</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(85, 255, 0);
+color: rgb(0, 0, 0);
+font: 12pt &quot;楷体&quot;;</string>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="LoginPage">
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>0</y>
+         <width>471</width>
+         <height>471</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(85, 255, 255);
+color: rgb(0, 0, 0);
+font: 11pt &quot;楷体&quot;;</string>
+       </property>
+       <widget class="QLineEdit" name="loginpwdEdit">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>180</y>
+          <width>201</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>请输入密码</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="loginPhoneEdit">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>140</y>
+          <width>201</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>请输入手机号</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>140</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>手机号：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>180</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>密码：</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="loginButton">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>240</y>
+          <width>161</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 170, 127);
+font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>登陆</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="registerPage">
+      <widget class="QLineEdit" name="registerPhoneEdit">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>150</y>
+         <width>201</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>请输入手机号</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="registerPwdlineEdit">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>190</y>
+         <width>201</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>请输入密码</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>190</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>密码：</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="registerButton">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>310</y>
+         <width>161</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 170, 127);
+font: 12pt &quot;楷体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>注册</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>150</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>手机号：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>50</y>
+         <width>301</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 0, 0);
+font: 11pt &quot;Courier New&quot;;</string>
+       </property>
+       <property name="text">
+        <string>账号不存在，请您注册新的账号！</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="registerDocNamelineEdit">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>230</y>
+         <width>201</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>请输入姓名</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>230</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>姓名：</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="patientList">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 226, 240);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QTableView" name="tableView"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="deletButton">
+           <property name="text">
+            <string>添加</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="addButton">
+           <property name="text">
+            <string>删除</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="text">
+            <string>查找</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="deviceList">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(227, 224, 255);</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="bindPage">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 181, 156);</string>
+      </property>
+      <widget class="QTableView" name="tableView_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>381</width>
+         <height>331</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="patientComboBox">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>360</y>
+         <width>69</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="deviceCombox">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>360</y>
+         <width>69</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bindOpButton">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>360</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>绑定</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="realtimeWave">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(225, 255, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,9">
+       <item>
+        <widget class="QWidget" name="widget_3" native="true">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(85, 170, 255);
+background-color: rgb(0, 255, 255);
+font: 10pt &quot;楷体&quot;;</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,2,1,2,0,0">
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+font: 9pt &quot;Courier New&quot;;</string>
+            </property>
+            <property name="text">
+             <string>ip:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="ipEdit">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+font: 9pt &quot;Courier New&quot;;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+font: 9pt &quot;Courier New&quot;;</string>
+            </property>
+            <property name="text">
+             <string>port:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="portEdit">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+font: 9pt &quot;Courier New&quot;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="connectButton">
+            <property name="styleSheet">
+             <string notr="true">font: 9pt &quot;楷体&quot;;
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string>连接</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="dispButton">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 9pt &quot;楷体&quot;;
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string>显示</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_4" native="true">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="historyWave">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(252, 255, 220);</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
