@@ -1,0 +1,16 @@
+INPUT(
+./release\bussiness.o
+./release\database.o
+./release\main.o
+./release\plotpixmap.o
+./release\serialport.o
+./release\server.o
+./release\tcpsocket.o
+./release\widget.o
+./release\moc_bussiness.o
+./release\moc_plotpixmap.o
+./release\moc_serialport.o
+./release\moc_server.o
+./release\moc_tcpsocket.o
+./release\moc_widget.o
+);

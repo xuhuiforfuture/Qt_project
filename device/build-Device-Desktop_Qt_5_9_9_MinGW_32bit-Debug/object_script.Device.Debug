@@ -1,0 +1,16 @@
+INPUT(
+./debug\bussiness.o
+./debug\database.o
+./debug\main.o
+./debug\plotpixmap.o
+./debug\serialport.o
+./debug\server.o
+./debug\tcpsocket.o
+./debug\widget.o
+./debug\moc_bussiness.o
+./debug\moc_plotpixmap.o
+./debug\moc_serialport.o
+./debug\moc_server.o
+./debug\moc_tcpsocket.o
+./debug\moc_widget.o
+);
